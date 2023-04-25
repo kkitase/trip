@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>パリを紹介するサイト</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Montserrat', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #2a2a2a;
+			color: #fff;
+			padding: 30px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 3rem;
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
+
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 50px 0;
+		}
+
+		figure {
+			margin: 20px;
+			padding: 0;
+			text-align: center;
+			border: 2px solid #eaeaea;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			transition: all 0.3s ease-in-out;
+			cursor: pointer;
+			width: calc(33.33% - 40px);
+			max-width: 300px;
+		}
+
+		figure:hover {
+			transform: translateY(-10px);
+			box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+		}
+
+		figure img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		figcaption {
+			font-size: 1.2rem;
+			font-weight: 400;
+			margin: 20px;
+		}
+
+		@media only screen and (max-width: 768px) {
+			figure {
+				width: calc(50% - 40px);
+			}
+		}
+
+		@media only screen and (max-width: 480px) {
+			h1 {
+				font-size: 2rem;
+			}
+
+			figure {
+				width: calc(100% - 40px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>パリを紹介するサイト</h1>
+	</header>
+	<main>
+		<figure>
+			<img src="https://github.com/kkitase/trip/blob/main/IMG_1015.JPG?raw=true" alt="Eiffel Tower">
+			<figcaption>エッフェル塔</figcaption>
+		</figure>
+		<figure>
+			<img src="https://github.com/kkitase/trip/blob/main/IMG_1212.JPG?raw=true" alt="Louvre Museum">
+			<figcaption>ルーブル美術館</figcaption>
+		</figure>
+    <figure>
+      <img src="https://github.com/kkitase/trip/blob/main/IMG_1254.JPG?raw=true" alt="Notre-Dame de Paris">
+      <figcaption>ノートルダム大聖堂</figcaption>
+    </figure>
+    <figure>
+      <img src="https://github.com/kkitase/trip/blob/main/IMG_1322.JPG?raw=true" alt="Arc de Triomphe">
+      <figcaption>凱旋門</figcaption>
+    </figure>
+  </main>
+  
